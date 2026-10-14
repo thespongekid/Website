@@ -1,1 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benim Web Sitem</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-hover: #0284c7;
+    }
 
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 700px;
+      width: 100%;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 0 2rem;
+    }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #38bdf8, #818cf8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+      margin: 0 auto 1.5rem;
+      box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.4);
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    p.bio {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    .section-title {
+      margin: 2.5rem 0 1rem;
+      font-size: 1.25rem;
+      border-bottom: 1px solid #334155;
+      padding-bottom: 0.5rem;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      padding: 1.25rem;
+      border-radius: 12px;
+      border: 1px solid #334155;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+    }
+
+    .card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.25rem;
+      color: var(--accent);
+    }
+
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .contact-btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background-color: var(--accent);
+      color: #0f172a;
+      font-weight: 600;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.15s ease;
+    }
+
+    .contact-btn:hover {
+      background-color: var(--accent-hover);
+    }
+
+    footer {
+      margin-top: auto;
+      padding-top: 3rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="avatar">🚀</div>
+      <h1>Merhaba, Ben [Adınız]</h1>
+      <div class="subtitle">Geliştirici / Tasarımcı / Öğrenci</div>
+      <p class="bio">Web geliştirme, açık kaynak projeler ve teknoloji üzerine çalışıyorum. Projelerime ve iletişim bilgilerime aşağıdan ulaşabilirsiniz.</p>
+      <a href="mailto:ipekyuksel@hacettepe.edu.tr" class="contact-btn">Bana Ulaşın</a>
+    </header>
+
+    <main>
+      <h2 class="section-title">Projelerim</h2>
+      <div class="cards">
+        <a href="https://github.com" target="_blank" class="card">
+          <h3>Proje 1 &rarr;</h3>
+          <p>HTML, CSS ve modern web teknolojileri ile geliştirilmiş bir portfolyo çalışması.</p>
+        </a>
+
+        <a href="https://github.com" target="_blank" class="card">
+          <h3>Proje 2 &rarr;</h3>
+          <p>Kişisel araçlar ve veri analizi üzerine açık kaynaklı bir Python scripti.</p>
+        </a>
+
+        <a href="https://github.com" target="_blank" class="card">
+          <h3>GitHub Profilim &rarr;</h3>
+          <p>Yazdığım diğer tüm kodları ve katkıda bulunduğum açık kaynak depoları inceleyin.</p>
+        </a>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 [Adınız]. GitHub Pages üzerinde barındırılmaktadır.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
